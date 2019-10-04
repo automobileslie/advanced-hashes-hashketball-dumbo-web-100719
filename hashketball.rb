@@ -126,5 +126,11 @@ def most_points_scored
   
     most_points = result.flatten.sort.last
     most_points
+     largest_shoe_size = result.flatten.sort.last
+    largest_shoe_size
+  game_hash.each do |home_or_away, stats|
+    stats[:players].each do |hash|
+      if hash[:points] == most_points
+        return hash[:name]
 end
 
