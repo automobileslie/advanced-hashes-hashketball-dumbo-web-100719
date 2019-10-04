@@ -116,6 +116,15 @@ result= game_hash.collect do |home_or_away, stats|
 end
 
 def most_points_scored
+  result= game_hash.collect do |home_or_away, stats|
+ 
+  stats[:players].collect do |hash|
+     
+    hash[:points]
+    end
+  end
   
+    most_points = result.flatten.sort.last
+    most_points
 end
 
