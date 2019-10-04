@@ -131,6 +131,7 @@ def most_points_scored
       if hash[:points] == most_points
         return hash[:name]
       end
+      end
     end
 end
 
