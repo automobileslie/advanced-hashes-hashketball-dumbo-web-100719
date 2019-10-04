@@ -130,5 +130,7 @@ def most_points_scored
     stats[:players].each do |hash|
       if hash[:points] == most_points
         return hash[:name]
+      end
+    end
 end
 
