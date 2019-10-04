@@ -123,7 +123,6 @@ def most_points_scored
     hash[:points]
     end
   end
-  
     most_points = result.flatten.sort.last
     most_points
   game_hash.each do |home_or_away, stats|
